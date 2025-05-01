@@ -1,0 +1,8 @@
+{
+  "db": {
+    "host": "localhost",
+    "user": "alarm_user",
+    "password": "securepass123",
+    "database": "faultmanage"
+  }
+}
