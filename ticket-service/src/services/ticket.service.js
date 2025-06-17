@@ -11,7 +11,9 @@ exports.createTicket = async (data) => {
     'INSERT INTO ticket (title, description, status) VALUES (?, ?, ?)',
     [title, description, status]
   );
-  const [newTicket] = await db.query('SELECT * FROM ticket WHERE id = ?', [result.insertId]);
+  const [newTicket] =  wait db.query('SELECT * FROM ticket WHERE id = ?', [result.insertId]);
+    
+  
   return newTicket[0];
 };
 
